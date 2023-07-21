@@ -1,0 +1,15 @@
+<!-- templates/predict_stress.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict Stress Level</title>
+</head>
+<body>
+    <h1>Predict Stress Level</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

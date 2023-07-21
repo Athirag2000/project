@@ -1,0 +1,16 @@
+<!-- registration_form.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Candidate Registration</title>
+</head>
+<body>
+    <h2>Candidate Registration Form</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
+
